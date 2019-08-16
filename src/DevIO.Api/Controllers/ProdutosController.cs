@@ -14,6 +14,7 @@ namespace DevIO.Api.Controllers
 {
     [Route("api/produtos")]
     [ApiController]
+    [Authorize]
     public class ProdutosController : MainController
     {
         private readonly IProdutoRepository _produtoRepository;
